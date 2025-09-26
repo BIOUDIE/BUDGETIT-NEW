@@ -25,7 +25,8 @@
         <div id="budget-details" class="hidden">
           <h2 id="display-title"></h2>
           <p>Total Budget: ₦<span id="set-total">0</span></p>
-          <p>Remaining: ₦<span id="remaining-amount">0</span></p>
+          <!-- 👇 Added id="remaining-text" wrapper -->
+          <p id="remaining-text">Remaining: ₦<span id="remaining-amount">0</span></p>
 
           <input type="text" id="item-name" placeholder="Item name">
           <input type="number" id="item-amount" placeholder="Amount">
