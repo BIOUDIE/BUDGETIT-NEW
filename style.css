@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #4361a8;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo {
+  width: 40px;
+  height: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Main Container */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 650px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Inputs & Buttons */
+input {
+  margin: 5px 0;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #006d6d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #004c4c;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#items-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#items-list li span.date {
+  flex: 0 0 90px;
+  color: #666;
+  font-size: 14px;
+}
+
+#items-list li span.name {
+  flex: 1;
+  margin: 0 10px;
+}
+
+#items-list li span.amount {
+  flex: 0 0 auto;
+  font-weight: bold;
+}
+
+/* Saved Budgets List */
+#budget-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+#budget-list li:hover {
+  background-color: #f0f0f0;
+  color: #006d6d;
+  font-weight: bold;
+}
